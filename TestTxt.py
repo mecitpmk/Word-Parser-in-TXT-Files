@@ -42,7 +42,7 @@ class ParseTXT:
         word_lists = self.letter_dict[first_letter]
         for words in range(len(word_lists)):
             if word_lists[words] == given_word:
-                return True,word_lists.index(given_word)
+                return True,words
         return False,-1
     
     def findSimilarWords(self,given_word):
